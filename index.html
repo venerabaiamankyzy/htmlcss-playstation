@@ -19,16 +19,16 @@
 
 	<body>
 		
-		<header>
+		<header id="header">
 			<!-- logo sony -->
-			<div class="sony container-fluid d-flex justify-content-end bg-dark">
-				<a href="#" class="text-decoration-none text-white">
-					SONY
+			<div class="header-top container-fluid bg-dark text-end py-1">
+				<a href="#">
+					<img src="./img/sony_logo.svg" alt="sony">
 				</a>
 			</div>
 
 			<!-- navbar -->
-			<nav class="navbar navbar-expand-lg bg-light">
+			<nav class="navbar navbar-expand-lg bg-light fw-semibold">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
 						<img src="./img/play_logo.svg" alt="Logo">
@@ -106,9 +106,10 @@
 							</li>
 							
 						</ul>
+					</div>
 
 						<!-- right nav -->
-					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<div class="nav-right justify-content-end">
 						<ul class="navbar-nav mb-2 mb-lg-0">
 
 							<!-- my playstation -->
@@ -122,7 +123,7 @@
 								</ul>
 							</li>
 
-							<li><a href="#" class="btn">Accedi</a></li>
+							<li><button type="button" class="btn btn-dark  rounded-pill mx-1">Accedi</button></li>
 
 							<li><a href="#" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a></li>
 						</ul>
@@ -135,13 +136,13 @@
 		<main>
 			<!-- jumbotron -->
 			<section id="jumbotron" class="d-flex flex-direction-wrap align-items-end">				
-				<div class="container">
+				<div class="container pb-5">
 					<div class="row">
-						<div class="col-12 col-lg-4">
-							<img src="./img/returnal-hero-banner-logo.png" class="w-50" alt="returnal">
-							<h1>Rompi il cerchio</h1>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nesciunt quae ipsa eum cum sint praesentium repellat. Maiores iste, doloremque tenetur qui repellat ullam.</p>
-							<a href="#" class="btn">Acquista ora</a>
+						<div class="col-12 col-lg-4 d-flex flex-column gap-4">
+							<img src="./img/returnal-hero-banner-logo.png" class="img-fluid" alt="returnal">
+							<h1 class="h1">Rompi il cerchio</h1>
+							<p>Rialzati dopo ogni sconfitta e affronta una nuova sfida ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.</p>
+							<button type="button" class="btn btn-danger  rounded-pill mx-1 ">Accedi</button>
 						</div>
 					</div>					
 				</div>
@@ -409,12 +410,82 @@
 			
 			<!-- social -->
 			<section id="social">
+				<div class="container py-5">
+					<h3 class="text-center my-5">Segui sul social media</h3>
 
+					<!-- social icons -->
+					<div class="d-flex justify-content-center">
+						<div class="row row-cols-sm-2 row-cols-md-4 gy-4">
+						<div class="col">
+							<img src="./img/twitter.jpg" alt="twitter" class="img-fluid">
+						</div>
+						
+						<div class="col">
+							<img src="./img/facebook.jpg" alt="twitter" class="img-fluid">
+						</div>
+
+						<div class="col">
+							<img src="./img/instagram.jpg" alt="twitter" class="img-fluid">
+						</div>
+
+						<div class="col">
+							<img src="./img/youtube.png" alt="twitter" class="img-fluid">
+						</div>
+					</div>
+					</div>
+					
+				</div>
 			</section>
 		</main>
 
 		<footer>
-			<section id="footer"></section>
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-6 text-light">
+							<img src="./img/ps-footer.svg" alt="Logo" class="img-fluid">
+							<div class="icon-global d-flex align-items-center">
+								<img src="./img/language-globe.svg" alt="global" class="img-fluid me-2">
+								<p class="m-0">Country / Region: Italy</p>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<nav class="row my-5 py-5 my-lg-0 py-lg-0">
+								<ul class="col-12 col-md-4 text-white">
+									<li><a href="#">Link footer n</a></li>			
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>				
+								</ul>
+
+								<ul class="col-12 col-md-4">
+									<li><a href="#">Link footer n</a></li>			
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+								</ul>
+
+								<ul class="col-12 col-md-4">
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>							
+									<li><a href="#">Link footer n</a></li>								
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer-footer col-12 col-lg-6 text-light">
+							<img src="./img/sie-logo.svg" alt="Logo" class="img-fluid">
+							<p>Website 2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati. Maggiori info</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</footer>
 
 		<!-- script -->

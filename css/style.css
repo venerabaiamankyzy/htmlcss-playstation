@@ -1,19 +1,29 @@
-/* .navbar-brand img {
-  width: 30px;
-} */
+#header .header-top img {
+  width: 5%;
+  max-width: 140px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  transform: translateZ(0px); 
+}
 
 #jumbotron {
-  height: 80vh;
+  height: 75vh;
   background-image: url("../img/jumbo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: white;
+  margin-top: 108px;
 } 
 
-.w-50 {
+ #jumbotron img {
   width: 50%;
-}
+} 
 
 /* console-ps5  */
 .img-dim img {
@@ -41,4 +51,48 @@
 /* playstation now */
 #ps-now {
   background-color: #161c3b;
+}
+
+#social img {
+  max-width: 150px;
+}
+
+#footer {
+  background-color: #00439c;
+}
+
+#footer ul>li {
+  list-style-type: none;
+  padding-top: 0.8rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(248,249,250);
+  margin: 1.5rem 0
+}
+
+.footer-footer img {
+  width: 30%;
+}
+
+#footer .icon-global img {
+  width: 3%;
+}
+
+#social .row {
+  max-width: 100%;
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width:992px) {
+
+    .social .row {
+        max-width: 30%;
+    }
+
+    .footer-foot-logo img {
+        max-width: 20%;
+    }
 }
