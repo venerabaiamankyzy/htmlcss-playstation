@@ -1,0 +1,44 @@
+/* .navbar-brand img {
+  width: 30px;
+} */
+
+#jumbotron {
+  height: 80vh;
+  background-image: url("../img/jumbo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+} 
+
+.w-50 {
+  width: 50%;
+}
+
+/* console-ps5  */
+.img-dim img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Takes two */
+#takes-two {
+  height: 80vh;
+  background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+} 
+
+/* playstation plus */
+#ps-plus {
+  background-color: #bebcbb;
+}
+
+/* playstation now */
+#ps-now {
+  background-color: #161c3b;
+}
