@@ -1,8 +1,28 @@
-#header .header-top img {
-  width: 5%;
-  max-width: 140px;
+:root {
+  --lh-pers: 1.8rem;
+  --btn-width: 10rem;
 }
 
+.lh-pers {
+  line-height: var(--lh-pers);
+  }
+
+/* button */
+.btn-width {
+  max-width: var(--btn-width);
+}
+
+  /* h2 h3  */
+.title-color {
+  color: #212529;
+}
+
+/* max width */
+.max-w60 {
+  max-width: 60%;
+}
+
+/* header */
 #header {
   position: fixed;
   width: 100%;
@@ -11,8 +31,14 @@
   transform: translateZ(0px); 
 }
 
+#header .header-top img {
+  width: 5%;
+  max-width: 140px;
+}
+
+/* jumbotron */
 #jumbotron {
-  height: 75vh;
+  height: 70vh;
   background-image: url("../img/jumbo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,21 +47,17 @@
   margin-top: 108px;
 } 
 
- #jumbotron img {
-  width: 50%;
-} 
-
 /* console-ps5  */
 .img-dim img {
-  width: 70%;
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 /* Takes two */
 #takes-two {
-  height: 80vh;
   background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,9 +65,19 @@
   color: white;
 } 
 
+/* new games */
+#new-games {
+  background-color: #1f1f1f;
+}
+
 /* playstation plus */
 #ps-plus {
   background-color: #bebcbb;
+}
+
+#ps-plus button, 
+#ps-now button {
+  background-color: #d9dadc;
 }
 
 /* playstation now */
@@ -53,10 +85,16 @@
   background-color: #161c3b;
 }
 
+/* social */
 #social img {
   max-width: 150px;
 }
 
+#social .row {
+  max-width: 100%;
+}
+
+/* footer */
 #footer {
   background-color: #00439c;
 }
@@ -72,27 +110,15 @@
   margin: 1.5rem 0
 }
 
-.footer-footer img {
-  width: 30%;
+.left-footer img {
+  height: 30%;
+}
+
+.footer-footer>img {
+  width: 20%;
 }
 
 #footer .icon-global img {
   width: 3%;
 }
 
-#social .row {
-  max-width: 100%;
-
-}
-
-/* MEDIA QUERIES */
-@media screen and (min-width:992px) {
-
-    .social .row {
-        max-width: 30%;
-    }
-
-    .footer-foot-logo img {
-        max-width: 20%;
-    }
-}
