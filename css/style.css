@@ -1,31 +1,63 @@
-/* .navbar-brand img {
-  width: 30px;
-} */
+:root {
+  --lh-pers: 1.8rem;
+  --btn-width: 10rem;
+}
 
+.lh-pers {
+  line-height: var(--lh-pers);
+  }
+
+/* button */
+.btn-width {
+  max-width: var(--btn-width);
+}
+
+  /* h2 h3  */
+.title-color {
+  color: #212529;
+}
+
+/* max width */
+.max-w60 {
+  max-width: 60%;
+}
+
+/* header */
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#header .header-top img {
+  width: 5%;
+  max-width: 140px;
+}
+
+/* jumbotron */
 #jumbotron {
-  height: 80vh;
+  height: 70vh;
   background-image: url("../img/jumbo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: white;
+  margin-top: 108px;
 } 
-
-.w-50 {
-  width: 50%;
-}
 
 /* console-ps5  */
 .img-dim img {
-  width: 70%;
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 /* Takes two */
 #takes-two {
-  height: 80vh;
   background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,12 +65,110 @@
   color: white;
 } 
 
+/* new games */
+#new-games {
+  background-color: #1f1f1f;
+}
+
 /* playstation plus */
 #ps-plus {
   background-color: #bebcbb;
+}
+
+#ps-plus button, 
+#ps-now button {
+  background-color: #d9dadc;
 }
 
 /* playstation now */
 #ps-now {
   background-color: #161c3b;
 }
+
+/* social */
+#social img {
+  max-width: 150px;
+}
+
+#social .row {
+  max-width: 100%;
+}
+
+/* footer */
+#footer {
+  background-color: #00439c;
+}
+
+#footer ul>li {
+  list-style-type: none;
+  padding-top: 0.8rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(248,249,250);
+  margin: 1.5rem 0
+}
+
+.left-footer img {
+  height: 30%;
+}
+
+#footer .footer-footer>img {
+  width: 20%;
+}
+
+#footer .icon-global img {
+  width: 3%;
+}
+
+/* bonus nav bar*/
+/* hover */
+#jumbotron-bottom .border-black {
+  border: 3px solid #2d64e6;
+}
+#jumbotron-bottom img {
+  position: relative;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+
+#jumbotron-bottom img:hover {
+  animation: hover 0.5s;
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.btn-lg:hover {
+  background-color: #cd3d0f;
+  box-shadow: inset 0px 0px 0px 2px black;
+  border: 1px solid #cd3d0f; 
+}
+
+.dropdown-item img{
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+} 
+
+
+.dropdown-menu.show {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0px;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.dropdown-menu {
+   transition: 0.5s;
+}
+
+
+
